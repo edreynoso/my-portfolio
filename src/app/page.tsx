@@ -1,6 +1,7 @@
 'use client'
 import { FaLinkedin, FaGithub, FaFilePdf, FaEnvelope} from "react-icons/fa";
 import NavBar from './components/NavBar';
+import { useEffect } from 'react';
 
 export default function Home() {
   const myInformation = [
@@ -15,8 +16,9 @@ export default function Home() {
     "studying computer science with a concentration in network security. I am currently a full-stack developer",
     "at Branded NIL."
   ]
+
   return (
-    <div className = "min-h-screen text-center flex flex-col text-white">
+    <div className = "min-h-screen text-center flex flex-col text-white bg-transparent">
       <NavBar/>
       <div className = 'py-7'>
         <img
